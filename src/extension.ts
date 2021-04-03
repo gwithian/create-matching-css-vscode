@@ -42,7 +42,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 function createFile(directory: string, fileName: string) {
   fs.writeFile(
-    path.join(directory, `${fileName}.css`),
+    path.join(directory, `${fileName}.module.scss`),
     "",
     (err: any) => {
       if (err) {
